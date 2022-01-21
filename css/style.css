@@ -1,0 +1,354 @@
+/* общие стили */
+:root{
+    --blue:#18A0FB;
+    --black:#000000;
+    --rgba:rgba(0, 0, 0, 0.8);
+    --white: #ffffff;
+    --background: #F5F5F5;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--rgba);
+    font-weight: 400;
+}
+.container{
+    outline: 1px solid tomato;
+    width: 1520px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* шапка */
+.header{
+    background-color: var(--white);
+    border-bottom: solid;
+    
+}
+.header-nav{
+    display: block;
+    display: flex;
+    align-items: center;
+}
+.link-logo{
+    padding: 14px 0;
+}
+.header-nav > .header-list{
+    display: flex;
+    margin-left: 70px;
+}
+.header-list > .header-item + .header-item{
+margin-left: 40px;
+}
+.header-list > .header-item{
+    padding: 21px 0;
+}
+.header-list-btn{
+    display: flex;
+    margin-left: auto;
+
+}
+.header-list-btn > .header-item:last-child{
+    margin-left: 40px;
+}
+
+
+
+
+
+.header-item{
+    color: var(--blue);
+  font-weight: 500;
+font-size: 15px;
+line-height: 1.2;
+letter-spacing: -0.015em;
+cursor: pointer;
+}
+.header-item:hover, .header-item:focus{
+    color: var(--black);
+}
+.btn{
+display: inline-block;
+text-align:center;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 1.2;
+letter-spacing: -0.015em;
+border-radius: 6px;
+min-width: 130px;
+border: 1px solid var(--blue);
+padding: 11px 34px;
+
+}
+.header-btn-log{
+    color: var(--blue);
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    
+
+}
+.header-btn-reg{
+    border: 1px solid transparent;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.btn:hover, .btn:focus{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.hero-btn{
+    color: var(--blue);
+    
+}
+/* герой */
+.hero{
+    
+    padding-bottom: 139px;
+    text-align: center;
+}
+.hero-title{
+font-style: normal;
+font-weight: 400;
+font-size: 56px;
+line-height: 1.43;
+letter-spacing: -0.015em;
+color: var(--black);
+margin-bottom: 30px;
+
+}
+/*////////////////// DETAILS ////////////////// */
+.details{
+    background-color: var(--white);
+    padding: 120PX 0;
+}
+.two{
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 1.5;
+letter-spacing: -0.015em;
+color: var(--black);
+
+}
+.three{
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 1.5;
+letter-spacing: -0.015em;
+color: var(--black);
+
+}
+
+.details-title{
+    margin-bottom: 24px;
+    
+}
+.container > .details-title{
+    margin-bottom: 59px;
+    width: 750px;
+}
+.details-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -150px;
+    margin-bottom: -50px;
+}
+.details-item{
+    width: 600px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.details-text, .work-text{
+font-weight: 400;
+line-height: 1.67;
+letter-spacing: -0.015em;
+margin-bottom: 32px;
+}
+.details-link  {
+font-weight: 500;
+font-size: 15px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: -0.015em;
+color: var(--blue);
+}
+.details-link {
+    display: inline-block;
+    background: var(--white);
+    border: 1px solid var(--blue);
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 11px 22px;
+    text-align: center;
+}
+.details-link:hover, .details-link:focus{
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: underline;
+}
+/* примеры работ */
+.work-item{
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.work-item:nth-child(2n) {
+    background-color: var(--background);
+    flex-direction: row-reverse;
+    
+}
+ .work-item:nth-child(2n + 1) > .work-content {
+    margin-left: 84px;
+}
+.work-list > .work-item:nth-child(2n) .work-content{
+    margin-right: 84px;
+}
+.work-title{
+    margin-bottom: 24px;
+}
+.work-text{
+margin:0;
+}
+/* ////////////////////COMPANY /////////////////// */
+.company{
+    padding: 120px 0;
+    text-align: center;
+}
+.company-title{
+    margin-bottom: 30px;
+}
+.company-text{
+    margin-bottom: 80px;
+}
+.company-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1052px;
+    margin: -30px -45px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+.company-item{
+    margin: 30px 45px;
+    
+}
+/* регистрация */
+.regist{
+    padding: 120px 0;
+}
+.container-regist{
+    display: flex;
+    align-items: center;
+}
+.regist-list{
+    display: flex;
+    justify-content: center;
+}
+
+.regist-text{
+width: 943px;
+font-weight:400;
+font-size: 36px;
+line-height: 1.39;
+letter-spacing: -0.015em;
+}
+.regist-btn-join, .footer-btn-join{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.regist-btn-contact, .footer-btn-contact{
+background-color: var(--white);
+color: var(--blue);
+}
+.regist-btn-join{
+    margin-left: 83px;
+}
+.regist-btn-contact{
+    margin-left: 45px;
+}
+/* футер */
+.footer{
+    padding-top: 120px;
+    padding-bottom: 337px;
+}
+.footer-nav{
+    display: flex;
+    border-bottom: solid rgba(0, 0, 0, 0.5);;
+
+    
+}
+.footer-content{
+    margin-left: auto;
+    
+    
+}
+.footer-content + .footer-content{
+    margin-left: 20px;
+}
+.foot-nav-three{
+    margin-right: 63px;
+}
+
+.footer-title:hover, .footer-title:focus{
+ color: #18A0FB;
+text-decoration: underline;
+cursor: pointer;
+}
+.footer-item:hover, .footer-item:focus{
+    color: var(--blue);
+    cursor: pointer;
+}
+.footer-title{
+font-weight: 700;
+font-size: 15px;
+line-height: 1.6;
+letter-spacing: -0.015em;
+
+}
+.footer-item{
+font-size: 15px;
+line-height: 1.6;
+letter-spacing: -0.015em; 
+}
+.footer-list-btn{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer-btn-join{
+    margin-bottom: 16px;
+}
+.footer-text-sub{
+
+}
